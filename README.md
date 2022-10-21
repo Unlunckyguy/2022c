@@ -1,9 +1,9 @@
 # 2022c
 資傳一甲 程式設計 的程式倉庫
 
-#Week06
+# Week06
 
-##step06-1
+## step06-1
 ```cpp
 #include <stdio.h>
 int main()
@@ -15,7 +15,7 @@ int main()
 }
 ```
 
-##step06-2
+## step06-2
 ```cpp
 #include <stdio.h>
 int main()
@@ -34,7 +34,7 @@ int main()
 }
 ```
 
-##step06-3
+## step06-3
 ```cpp
 #include <stdio.h>
 int main()
@@ -49,7 +49,7 @@ int main()
 }
 ```
 
-##step06-4
+## step06-4
 ```cpp
 #include <stdio.h>
 int main()
@@ -65,5 +65,67 @@ int main()
     b=c;
     }
     printf("中的是:%d",b);
+}
+```
+
+# Week07
+
+## step07-1
+```.cpp
+#include <stdio.h>
+int main()
+{
+    int n=1234567812345678;
+    printf("%d\n",n);
+    long long int a=123456789123456789;
+    printf("%lld\n",a);
+}
+```
+
+## step07-2
+```.cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b;
+    scanf("%lld%lld",&a,&b);
+
+    long long int ans;
+    for(int i=1;i<=a;i++){
+        if(a%i==0 && b%i==0) ans=i;
+    }
+    printf("答案是:%lld",ans);
+}
+```
+
+## step07-3
+```.cpp
+#include <stdio.h>
+int main()
+{
+    long long int a,b,c;
+    scanf("%lld%lld",&a,&b);
+
+    while(1){
+        c==a%b;
+        printf("%lld %lld% lld\n",a,b,c);
+        if(c=0) break;
+        a=b;
+        b=c;
+    }
+    printf("答案是:%lld\n",b);
+}
+```
+
+## step07-4
+```.cpp
+#include <stdio.h>
+int main()
+{
+    int n=1234;
+    while(n>0){
+        printf("個位數是%d\n",n%10);
+        n=n/10;
+    }
 }
 ```
